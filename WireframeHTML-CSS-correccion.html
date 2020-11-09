@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li>
+                <h1 id="city">Barcelona</h1>
+              </li>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <form id="search-form">
+              <input id="city-input" type="search" placeholder="Type a city" />
+              <input type="submit" value="go" />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="clearfix weather-temperature">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                width="100"
+                alt="Cloudy"
+                class="weather-icon float-left"
+                id="icon"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temperature">25</span
+                ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>Prob de precipitaciones:11%</li>
+              <li>Humidity:<span id="humidity"></span></li>
+              <li>Wind: <span id="wind"></span>Km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 text-center">
+            Mon
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+          <div class="col-sm-2 text-center">
+            Tue
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+
+          <div class="col-sm-2 text-center">
+            Thr
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+          <div class="col-sm-2 text-center">
+            Fri
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+          <div class="col-sm-2 text-center">
+            Sat
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+          <div class="col-sm-2 text-center">
+            Sun
+            <img
+              class="icon"
+              src="images/undraw_Raining_re_4b55 (1).png"
+              width="100px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+
+  </head>
+  </body>
+</html>
